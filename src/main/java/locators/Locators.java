@@ -7,7 +7,6 @@ public interface Locators {
 		public static final String UserName = "username";
 		public static final String Password = "password";
 		public static final String LoginButton = "Login";
-
 	}
 
 	//Home Page Locators
@@ -17,13 +16,11 @@ public interface Locators {
 		public static final String Search = "st-search-input";
 		public static final String SearchListItem = "//p[contains(.,'Writing Tests')]";
 		public static final String HomePageLogoutButton = "user-info-logout";
-
 	}
 
 	//Writing Tests Article Page Locators
 	public class WritingTestsPage {
 		public static final String TestingApexPageLink = "//a[contains(.,'Testing Apex')]";
-
 	}
 
 	//Common Reused Across the Pages Locatos
