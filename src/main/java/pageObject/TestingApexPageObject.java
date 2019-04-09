@@ -16,7 +16,7 @@ public class TestingApexPageObject extends SeleniumBase implements Locators {
 		//Remaining Browsers wait for element to be clickable
 		if (!browser.equalsIgnoreCase("safari")) {
 			WebDriverWait waits = new WebDriverWait(driver,60);
-			waits.until(ExpectedConditions.presenceOfElementLocated((By.id(Common.PageHeading))));
+			waits.until(ExpectedConditions.visibilityOfElementLocated((By.id(Common.PageHeading))));
 		}
 
 		//Return the heading of the Page
