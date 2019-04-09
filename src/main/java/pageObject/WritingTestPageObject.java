@@ -20,8 +20,8 @@ public class WritingTestPageObject extends SeleniumBase{
 
 		//Remaining Browsers wait for element to be clickable
 		if (!browser.equalsIgnoreCase("safari")) {
-			WebDriverWait waits = new WebDriverWait(driver,30);
-			waits.until(ExpectedConditions.presenceOfElementLocated((By.id(Common.PageHeading))));
+			WebDriverWait waits = new WebDriverWait(driver,50);
+			waits.until(ExpectedConditions.visibilityOfElementLocated((By.id(Common.PageHeading))));
 		}
 		//Assert 'Writing Tests' page is open
 		String heading = driver.findElement(By.id(Common.PageHeading)).getText();
